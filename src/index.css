@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Two Brothers earthy palette */
+    --background: 42 30% 97%;
+    --foreground: 30 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 25% 15%;
+
+    /* Deep forest green - primary brand color */
+    --primary: 147 40% 22%;
+    --primary-foreground: 42 30% 97%;
+
+    /* Warm cream secondary */
+    --secondary: 42 40% 92%;
+    --secondary-foreground: 30 25% 15%;
+
+    --muted: 42 20% 92%;
+    --muted-foreground: 30 15% 45%;
+
+    /* Warm amber accent */
+    --accent: 28 80% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 42 20% 85%;
+    --input: 42 20% 88%;
+    --ring: 147 40% 22%;
+
+    --radius: 0.5rem;
+
+    /* Brand specific tokens */
+    --brand-green: 147 40% 22%;
+    --brand-green-light: 147 35% 35%;
+    --brand-cream: 42 50% 95%;
+    --brand-amber: 28 80% 52%;
+    --brand-brown: 25 40% 35%;
+    --brand-dark: 30 25% 15%;
+    --brand-red: 0 70% 45%;
+
+    /* Notification toast position */
+    --toast-left: 1rem;
+
+    --sidebar-background: 42 30% 97%;
+    --sidebar-foreground: 30 25% 15%;
+    --sidebar-primary: 147 40% 22%;
+    --sidebar-primary-foreground: 42 30% 97%;
+    --sidebar-accent: 42 40% 92%;
+    --sidebar-accent-foreground: 30 25% 15%;
+    --sidebar-border: 42 20% 85%;
+    --sidebar-ring: 147 40% 22%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
