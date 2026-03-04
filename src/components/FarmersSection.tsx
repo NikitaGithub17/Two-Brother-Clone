@@ -1,7 +1,7 @@
 import React from "react";
 
 const VIDEO_ID = "9Le2MnFiXsY";
-const THUMBNAIL = `https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`;
+const THUMBNAIL = `thumbnail.webp`;
 const YT_URL = `https://www.youtube.com/watch?v=${VIDEO_ID}`;
 
 const FarmersSection: React.FC = () => {

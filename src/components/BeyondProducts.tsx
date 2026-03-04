@@ -1,5 +1,4 @@
 import React from "react";
-import farmersBanner from "@/assets/farmers-banner.jpg";
 
 const BeyondProducts: React.FC = () => {
   return (
@@ -15,7 +14,7 @@ const BeyondProducts: React.FC = () => {
         {/* Right: Farmer Stories card */}
         <div className="w-full md:w-2/3 relative rounded-2xl overflow-hidden shadow-lg">
           <img
-            src={farmersBanner}
+            src="/thumbnail.webp"
             alt="Farmer Stories"
             className="w-full h-80 object-cover"
           />

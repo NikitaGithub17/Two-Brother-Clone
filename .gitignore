@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# git add .
+# git commit -m "Describe what you changed"
+# git push --set-upstream origin main
