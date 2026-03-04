@@ -2,6 +2,7 @@ import { useStore } from "@/context/StoreContext";
 import { products } from "@/data/mockProducts";
 import { ChevronDown, Heart, Menu, Search, ShoppingCart, X } from "lucide-react";
 import React, { useMemo, useState } from "react";
+import FavoritesDrawer from "@/components/FavoritesDrawer";
 
 const categories = [
   "Ghee", "Oil", "Atta", "Jaggery", "Immunity", "Rice", "Breakfast & Snacks", "Grains & Pulses", "Spices"
@@ -13,6 +14,7 @@ const Navbar: React.FC = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showResults, setShowResults] = useState(false);
+  const [favOpen, setFavOpen] = useState(false);
 
   const searchResults = useMemo(() => {
     if (!searchQuery.trim()) return [];
@@ -106,13 +108,16 @@ const Navbar: React.FC = () => {
           </button>
 
           {/* Logo */}
-          <div className="flex items-center">
-          <img 
-            src="/logo.avif"
-            alt="Two Brothers Logo"
-            className="h-10 w-auto"
-          />
-        </div>
+          <button
+            className="flex items-center"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <img 
+              src="/logo.avif"
+              alt="Two Brothers Logo"
+              className="h-10 w-auto"
+            />
+          </button>
 
           {/* Nav links - desktop */}
           <nav className="hidden lg:flex items-center gap-1">
@@ -138,7 +143,7 @@ const Navbar: React.FC = () => {
               <Search className="w-5 h-5 text-foreground" />
             </button>
 
-            <button className="relative p-2 hover:text-primary transition-colors">
+            <button className="relative p-2 hover:text-primary transition-colors" onClick={() => setFavOpen(true)}>
               <Heart className="w-5 h-5 text-foreground" />
               {favorites.length > 0 && (
                 <span className="absolute -top-0.5 -right-0.5 bg-brand-red text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center font-bold">
@@ -184,6 +189,7 @@ const Navbar: React.FC = () => {
           </nav>
         </div>
       )}
+      <FavoritesDrawer open={favOpen} onOpenChange={setFavOpen} />
     </>
   );
 };
