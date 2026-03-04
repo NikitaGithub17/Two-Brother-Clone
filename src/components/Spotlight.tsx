@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { products } from "@/data/mockProducts";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import React, { useRef } from "react";
 
-const spotlightProducts = products.slice(0, 10);
+const spotlightProducts = products.slice(0, 5);
 
 const reviews = [
   { name: "Truemato Ketchup", review: "Absolutely love this! Not just ketchup - a real food upgrade. Honest ingredients, no shortcuts.", reviewer: "Anand M" },

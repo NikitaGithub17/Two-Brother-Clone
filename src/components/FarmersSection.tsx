@@ -1,6 +1,6 @@
 import React from "react";
 
-const VIDEO_ID = "9Le2MnFiXsY";
+const VIDEO_ID = "-Z-_mVpqQ94&t=1s";
 const THUMBNAIL = `thumbnail.webp`;
 const YT_URL = `https://www.youtube.com/watch?v=${VIDEO_ID}`;
 
@@ -32,10 +32,11 @@ const FarmersSection: React.FC = () => {
           />
           {/* Play button overlay */}
           <div className="absolute inset-0 flex items-center justify-center bg-foreground/20 group-hover:bg-foreground/30 transition-colors">
-            <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-xl">
-              <svg className="w-7 h-7 text-brand-red ml-1" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5v14l11-7z" />
-              </svg>
+            <div className="w-16 h-16 flex items-center justify-center shadow-xl">
+              <img 
+              src="/ytlogo.png"
+              alt="YT LOGO"
+              ></img>
             </div>
           </div>
         </a>
