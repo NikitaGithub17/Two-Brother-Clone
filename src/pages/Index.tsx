@@ -54,8 +54,8 @@ const Index = () => {
         <ShopByConcern />
         <Spotlight />
         <FeaturedIn />
-        <Testimonials />
         <BeyondProducts />
+        <Testimonials />
         <FarmersSection />
 
         {/* Footer */}
