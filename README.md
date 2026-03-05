@@ -1,73 +1,141 @@
-# Welcome to your Lovable project
+# Two Brothers Organic Farms – Frontend Clone
 
-## Project info
+This project is a **frontend replica of the Two Brothers Organic Farms website homepage**, built as part of an internship task.
+The goal is to recreate the UI and interactive shopping experience of the original website using modern frontend technologies.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The application includes a responsive layout, product listings, cart interactions, and UI elements similar to the original site.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Project Objective
 
-**Use Lovable**
+The objective of this project is to:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+* Recreate the **homepage UI and product sections** of the Two Brothers Organic Farms website.
+* Implement **interactive shopping features** such as add-to-cart, favorites, and notifications.
+* Structure the application using **React components** and a scalable frontend architecture.
+* Prepare the project for **future backend integration**.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Features Implemented
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* Responsive **homepage layout**
+* Navigation **header and footer**
+* **Hero banner section**
+* **Product grid display**
+* Add products to **cart**
+* **Remove items** from cart
+* Add/remove items from **favorites**
+* **Toast notifications** for user actions
+* Product **quantity selection**
+* “Shop by Concern” section
+* Embedded **YouTube video section**
+* “Beyond Our Products” informational section
+* **Custom favicon and branding**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+**Frontend**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* React
+* TypeScript
+* Vite
 
-# Step 3: Install the necessary dependencies.
-npm i
+**Styling**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+* Tailwind CSS
+* Custom CSS
+
+**Icons**
+
+* Lucide React
+
+**Version Control**
+
+* Git
+* GitHub
+
+---
+
+## Project Structure
+
+```
+Two-Brother-Clone
+│
+├── public/                 # Static assets
+│   ├── favicon.ico
+│   └── images
+│
+├── src/
+│   ├── assets/             # Logos and media
+│   ├── components/         # React UI components
+│   ├── context/            # Cart and global state
+│   ├── data/               # Product data
+│   ├── services/           # Data access layer
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Installation and Setup
 
-**Use GitHub Codespaces**
+Clone the repository:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+git clone https://github.com/NikitaGithub17/Two-Brother-Clone.git
+```
 
-## What technologies are used for this project?
+Navigate into the project:
 
-This project is built with:
+```bash
+cd Two-Brother-Clone
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Install dependencies:
 
-## How can I deploy this project?
+```bash
+npm install
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Run the development server:
 
-## Can I connect a custom domain to my Lovable project?
+```bash
+npm run dev
+```
+---
 
-Yes, you can!
+## Future Improvements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+* Backend integration for:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+  * Product database
+  * Cart persistence
+  * User authentication
+* Checkout flow implementation
+* API-based product fetching
+* Improved mobile optimization
+* Performance optimization and lazy loading
+
+---
+
+## Disclaimer
+
+This project is created **only for educational and internship purposes** as a UI/UX recreation.
+All brand assets and design references belong to **Two Brothers Organic Farms**.
+
+---
+
+## Author
+
+**Nikita**  
+---
+GitHub: https://github.com/NikitaGithub17
